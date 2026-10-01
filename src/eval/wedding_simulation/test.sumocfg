@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+  <input>
+    <!-- Your network with sidewalks + minimal crossings -->
+    <net-file value="..\..\..\data\open_street_map\wedding\wedding.net.xml"/>
+
+    <!-- The sorted & patched vehicle/person file -->
+    <route-files value="..\..\..\scripts\duaiterate\duarouter_filter_trips\validated.trips.xml"/>
+
+    <additional-files value="..\..\..\data\open_street_map\wedding\gtfs_pt_stops.add.xml,
+    ..\..\..\data\open_street_map\wedding\validated.gtfs_pt_vehicles.add.xml, edge_data.add.xml"/>
+  </input>
+
+  <time>
+    <begin value="0"/>
+    <end   value="86400"/>
+    <step-length value="1"/>
+  </time>
+
+  <report>
+    <log value="sumo.log"/>
+  </report>
+
+  <processing>
+    <tripinfo-output value="tripinfo.xml"/>
+  </processing>
+
+</configuration>

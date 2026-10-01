@@ -1,0 +1,21 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+transformers
+torch
+torchvision
+torchaudio
+huggingface_hub
+accelerate
+bitsandbytes
+openpyxl
+libsumo
+matplotlib
+pandas
+geopandas
+upsetplot
+lxml
+osmnx
+scikit-learn
+shapely
+numpy
+dotenv
+rtree
